@@ -51,7 +51,8 @@ const bartInfo3 = {
   image:
     "https://www.stickees.com/files/cartoon/the-simpsons/2242-bart-simpson-bartman.png",
   firstName: "Bart",
-  lastName: "Simpson"
+  lastName: "Simpson",
+  isImage: false
 };
 
 const homerInfo3 = {

@@ -3,6 +3,7 @@ import "./App.css";
 import Avatar from "./components/Avatar";
 import Avatar1 from "./components/Avatar1";
 import Avatar2 from "./components/Avatar2";
+import Avatar3 from "./components/Avatar3";
 
 const bartInfo = {
   image:
@@ -46,6 +47,21 @@ const homerInfo2 = {
   lastName: "Simpson"
 };
 
+const bartInfo3 = {
+  image:
+    "https://www.stickees.com/files/cartoon/the-simpsons/2242-bart-simpson-bartman.png",
+  firstName: "Bart",
+  lastName: "Simpson"
+};
+
+const homerInfo3 = {
+  image:
+    "https://www.stickees.com/files/cartoon/the-simpsons/2248-homer-simpson-happy.png",
+  firstName: "Homer",
+  lastName: "Simpson",
+  isImage: false
+};
+
 const App = () => {
   return (
     <div className="App">
@@ -65,6 +81,12 @@ const App = () => {
         <h1>Destructuting props</h1>
         <Avatar2 {...bartInfo2} />
         <Avatar2 {...homerInfo2} />
+      </div>
+      <hr/>
+      <div>
+        <h1>If Else props</h1>
+        <Avatar3 {...bartInfo3} />
+        <Avatar3 {...homerInfo3} />
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import "./Avatar2.css";
 class Avatar2 extends Component {
   render() {
     const { image, firstName, lastName } = this.props;
+    //console.log(firstName);
     return (
       <div className="Avatar2">
         <img src={image} alt="Bart or Homer"/>
